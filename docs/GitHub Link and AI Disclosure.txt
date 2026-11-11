@@ -1,0 +1,18 @@
+APPDAET GitHub Link: https://github.com/drake12324/Numerical-Root-Finder
+
+
+AI Disclosure:
+
+Our group used ChatGPT as a supporting tool during the preparation of our APPDAET Numerical Root Finder project and Progress Report 1.
+
+AI assistance was used for the following purposes:
+
+Understanding Mathematical Concepts: We used ChatGPT to help us learn and better understand cubic polynomials, numerical root-finding, and how the Bisection Method works.
+
+Organizing Group Responsibilities: We used AI to help divide and organize the tasks among our group members, making it easier to manage responsibilities and save time during the planning stage.
+
+Understanding Project Requirements: We used ChatGPT to review and explain the project instructions, identify the required deliverables, and understand what information needed to be included in our documentation and presentation.
+
+Document Formatting and Organization: AI helped us organize the written content, improve formatting, structure sections, and prepare the documents according to the required submission formats.
+
+Guidance in Preparing Progress Report 1: We used ChatGPT to guide us in preparing the report, reviewing our explanations, checking our flowchart and GUI wireframe, identifying missing details, and suggesting improvements. AI also assisted in drafting and refining portions of our written documentation.
