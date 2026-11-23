@@ -1,4 +1,4 @@
-
+import math
 from newton_raphson import newton_raphson
 from bisection import bisection_method, print_bisection_report
 
@@ -6,9 +6,16 @@ from bisection import bisection_method, print_bisection_report
 def get_number(message):
     while True:
         try:
-            return float(input(message))
+            number = float(input(message))
+
+            if math.isfinite(number):
+                return number
+
+            print("Please enter a finite number.")
+
         except ValueError:
             print("Please enter a valid number.")
+
 
 
 def get_integer(message):
