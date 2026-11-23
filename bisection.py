@@ -110,7 +110,7 @@ def bisection_method(coeffs, lower, upper, tol, max_iter):
 
 
 def print_bisection_report(result):
-    if not result[""]:
+    if not result["success"] and result["root"] is None:
         print("\nCould not run Bisection Method:", result["reason"])
         return
 
@@ -131,4 +131,4 @@ def print_bisection_report(result):
     print("Approximate root:", result["root"])
     print("Residual |f(x)|:", result["residual"])
     print("Iterations:", result["iterations"])
-    print("Stopped by:", result["reason"])
+    print("Status:","Successful" if result["success"] else "Unsuccessful")
