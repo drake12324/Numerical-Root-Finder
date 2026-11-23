@@ -31,5 +31,13 @@ Numerical Root Finder is a Python program designed to find the roots of polynomi
 
    python3 main.py
 
+
 ## Current Development Status
-The main menu and input collection are currently implemented. Integration of the numerical methods is still in progress.
+
+The main program now supports the Bisection Method and Newton-Raphson Method for linear, quadratic, and cubic equations.
+
+The Bisection Method displays an iteration table, approximate root, residual, stopping reason, and calculation status.
+
+The Newton-Raphson Method calculates an approximate root and displays the iteration count and calculation status.
+
+
