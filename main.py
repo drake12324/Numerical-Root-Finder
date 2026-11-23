@@ -1,4 +1,7 @@
+
 from newton_raphson import newton_raphson
+from bisection import bisection_method, print_bisection_report
+
 
 def get_number(message):
     while True:
@@ -84,13 +87,9 @@ def main():
                 print("Upper bound must be greater than lower bound.")
                 continue
 
-            print("\nBisection settings collected.")
-
         elif method == "2":
             print("\nNewton-Raphson Method selected.")
             initial_guess = get_number("Enter initial guess: ")
-
-            print("\nNewton-Raphson settings collected.")
 
         print("\n========== INPUT SUMMARY ==========")
         print("Equation degree:", degree)
@@ -101,13 +100,20 @@ def main():
         if method == "1":
             print("Lower bound:", lower)
             print("Upper bound:", upper)
-        else:
-            print("Initial guess:", initial_guess)
 
-        if method == "1":
-            print("\nBisection algorithm is not yet integrated.")
+            result = bisection_method(
+                coefficients,
+                lower,
+                upper,
+                tolerance,
+                max_iterations
+            )
+
+            print_bisection_report(result)
 
         elif method == "2":
+            print("Initial guess:", initial_guess)
+
             root, iterations, converged = newton_raphson(
                 coefficients,
                 initial_guess,
