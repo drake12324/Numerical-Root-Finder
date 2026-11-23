@@ -6,6 +6,8 @@ def newton_raphson(coefficients, initial_guess, tolerance, max_iterations):
 
     for iteration in range(1, max_iterations + 1):
         fx = calculate_polynomial(coefficients, x)
+        if abs(fx) <= tolerance:
+        return x, iteration, True
         derivative = calculate_derivative(coefficients, x)
 
         if derivative == 0:
