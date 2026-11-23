@@ -1,3 +1,4 @@
+from newton_raphson import newton_raphson
 
 def get_number(message):
     while True:
@@ -103,7 +104,25 @@ def main():
         else:
             print("Initial guess:", initial_guess)
 
-        print("\nAlgorithm integration is pending.")
+        if method == "1":
+            print("\nBisection algorithm is not yet integrated.")
+
+        elif method == "2":
+            root, iterations, converged = newton_raphson(
+                coefficients,
+                initial_guess,
+                tolerance,
+                max_iterations
+            )
+
+            print("\n========== NEWTON-RAPHSON RESULT ==========")
+            print("Estimated Root:", root)
+            print("Iterations:", iterations)
+
+            if converged:
+                print("Status: Converged")
+            else:
+                print("Status: Did not converge")
 
 
 if __name__ == "__main__":
