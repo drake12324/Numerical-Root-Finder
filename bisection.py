@@ -100,7 +100,7 @@ def bisection_method(coeffs, lower, upper, tol, max_iter):
             low = mid
 
     return {
-        "success": True,
+        "success": reason != "Maximum iterations reached",
         "root": mid,
         "residual": abs(f_mid),
         "iterations": len(history),
@@ -110,7 +110,7 @@ def bisection_method(coeffs, lower, upper, tol, max_iter):
 
 
 def print_bisection_report(result):
-    if not result["success"]:
+    if not result[""]:
         print("\nCould not run Bisection Method:", result["reason"])
         return
 
