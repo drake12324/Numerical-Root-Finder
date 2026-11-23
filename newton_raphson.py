@@ -19,8 +19,9 @@ def newton_raphson(coefficients, initial_guess, tolerance, max_iterations):
 
         new_x = x - (fx / derivative)
 
-        if abs(new_x - x) < tolerance:
+        if abs(calculate_polynomial(coefficients, new_x)) <= tolerance:
             return new_x, iteration, True
+
 
         x = new_x
 
