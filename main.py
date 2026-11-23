@@ -75,11 +75,13 @@ def main():
         for label in labels:
             value = get_number("Enter " + label + ": ")
             coefficients.append(value)
-            
+             
         if coefficients[0] == 0:
             print("Leading coefficient cannot be zero for the selected degree.")
-        continue
+            continue
+
         print("\nEnter calculation settings:")
+
 
         tolerance = get_number("Enter tolerance: ")
         max_iterations = get_integer("Maximum iterations: ")
