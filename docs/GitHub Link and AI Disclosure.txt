@@ -16,3 +16,7 @@ Understanding Project Requirements: We used ChatGPT to review and explain the pr
 Document Formatting and Organization: AI helped us organize the written content, improve formatting, structure sections, and prepare the documents according to the required submission formats.
 
 Guidance in Preparing Progress Report 1: We used ChatGPT to guide us in preparing the report, reviewing our explanations, checking our flowchart and GUI wireframe, identifying missing details, and suggesting improvements. AI also assisted in drafting and refining portions of our written documentation.
+
+Code Checking and Debugging: During PR2, we used ChatGPT to review parts of our Python code, identify possible errors, understand how functions work, and suggest improvements.
+
+Code guidance: we used ai tools to help guide us how to understand and create the codes while understanding its functions and uses.
